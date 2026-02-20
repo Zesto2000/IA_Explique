@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1 - Accueil Intelligence Artificielle</title>
+  <link rel="stylesheet" href="style.css">
+
+<center><header class="banner-header">
+    <img src="image.jpg" alt="Bannière du site" class="banner-image">
+</header></center>
+
+
+</head>
+<body>
+
+
+
+<!-- Barre de liens rapides -->
+<nav class="quick-links">
+    <a href="#definition">Introduction</a>
+    <a href="Page_2.html">Fonctionnement de l’IA</a>
+    <a href="Page_3.html">Usages et limites de l’IA</a>
+    <a href="#">Qcm</a>
+</nav>
+
+
+<h1 id="main-title" class="reveal">
+    Bienvenue sur le site dédié à l’Intelligence Artificielle
+</h1>
+
+<div class="section reveal">
+<h2>Introduction à l’Intelligence Artificielle</h2>
+
+<p>
+L’intelligence artificielle (IA) est un domaine de l’informatique qui vise à créer 
+des systèmes capables de simuler l’intelligence humaine. 
+Elle permet aux machines d’apprendre, de raisonner, de comprendre le langage 
+et de prendre des décisions de manière autonome.
+</p>
+
+<p>
+Aujourd’hui, l’IA est utilisée dans de nombreux secteurs comme la santé, 
+la finance, les transports, l’industrie et les technologies numériques.
+</p>
+
+
+
+
+<div class="section reveal" id="definition">
+<h2>Définition de l’<abbr title="Intelligence artificielle">IA</abbr></h2>
+
+<p class="highlight">
+L’<abbr title="Intelligence artificielle">IA</abbr> désigne l’ensemble des techniques permettant 
+à des machines d’imiter certaines capacités cognitives humaines 
+comme l’apprentissage, la reconnaissance ou la prise de décision.
+</p>
+<h3>Objectifs principaux de l’<abbr title="Intelligence artificielle">IA</abbr> :</h3>
+
+<ul>
+    <li>Automatiser des tâches complexes</li>
+    <li>Analyser de grandes quantités de données</li>
+    <li>Améliorer la prise de décision</li>
+    <li>Optimiser les performances des systèmes</li>
+</ul>
+
+<h3>Étapes générales de développement d’un système d’<abbr title="Intelligence artificielle">IA</abbr> :</h3>
+
+<ol>
+    <li>Définir le problème</li>
+    <li>Collecter les données</li>
+    <li>Choisir un algorithme</li>
+    <li>Entraîner le modèle</li>
+    <li>Tester et améliorer le système</li>
+</ol>
+
+</div>
+
+<div class="section reveal">
+<h2>Tableau Récapitulatif</h2>
+
+<table>
+<tr>
+<th>Élément</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Définition</td>
+<td>Simulation de l’intelligence humaine par des machines</td>
+</tr>
+
+<tr>
+<td>Fonctionnement</td>
+<td>Basé sur des algorithmes et des données</td>
+</tr>
+
+<tr>
+<td>Applications</td>
+<td>Santé, finance, transport, industrie</td>
+</tr>
+
+<tr>
+<td>Technologies clés</td>
+<td>Machine Learning, Deep Learning, Réseaux de neurones</td>
+</tr>
+
+</table>
+</div>
+
+
+
+<!-- Section vidéo -->
+<div class="section more-info reveal">
+
+    <h2>En savoir plus</h2>
+
+    <p>
+    Si vous voulez en savoir plus sur les bases de l’intelligence artificielle, cliquez sur l’image ci-dessous :
+    </p>
+<div class="image-link">
+   <center><a href="https://www.youtube.com/watch?v=Gt6mk2oKrfw" target="_blank">
+        <img src="iavideo.png"   width="600" style="border-radius: 20px;"alt="Vidéo explicative IA" class="ia-image">
+    </a>
+    <p>Cliquez sur l’image pour voir la vidéo explicative.</p></center>
+</div>
+
+  
+<footer>
+    <h2>Sources </h2>
+
+    <ul class="ia-sources">
+        <li>Wikipedia – Intelligence Artificielle:  
+            <a href="https://fr.wikipedia.org/wiki/Intelligence_artificielle" target="_blank">Lien du site</a>
+        </li>
+
+        <li>OpenAI – Présentation de l’IA:  
+            <a href="https://openai.com/research" target="_blank">Lien du site</a>
+        </li>
+
+        <li>DeepMind – Intelligence Artificielle:  
+            <a href="https://www.deepmind.com/research" target="_blank">Lien du site</a>
+        </li>
+
+        <li>AI For Everyone – Introduction à l’IA:  
+            <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank">Lien du site</a>
+        </li>
+
+        <li>Institut Montaigne – IA et société:  
+            <a href="https://www.institutmontaigne.org/ressources/intelligence-artificielle" target="_blank">Lien du site</a>
+        </li>
+
+        <li>Microsoft AI – Ressources IA:  
+            <a href="https://www.microsoft.com/en-us/ai/our-approach" target="_blank">Lien du site</a>
+        </li>
+    </ul>
+</footer>
+
+
+
+<!-- Script pour reveal au scroll -->
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.2 });
+
+reveals.forEach(reveal => observer.observe(reveal));
+</script>
+<nav class="quick-links">
+    <a href="Page_aceuil.html">Retour en haut</a>
+  <a href="Page_2.html">Fonctionnement de l’IA</a>
+</nav>
+</body>
+</html>
